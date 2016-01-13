@@ -32,3 +32,6 @@ Route::group(['middleware' => ['web']], function () {
 
 Route::get('/react-comments','CommentController@index');
 Route::post('/react-comments','CommentController@store');
+
+Route::get('/select-one','SelectboxController@index');
+Route::post('/select-one','SelectboxController@store');
